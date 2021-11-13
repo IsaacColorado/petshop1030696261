@@ -1,14 +1,40 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.mono.modelo;
 
-/**
- *
- * @author famil
- */
+
 public class Catalogo {
+    private int id;
+    private String nombrecorte;
+
+    public Catalogo() {
+    }
+
+    public Catalogo(int id, String nombrecorte) {
+        this.id = id;
+        this.nombrecorte = nombrecorte;
+    }
+
+    public String getNombrecorte() {
+        return nombrecorte;
+    }
+
+    public void setNombrecorte(String nombrecorte) {
+        this.nombrecorte = nombrecorte;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Catalogo set id='" + id + "', nombrecorte='" + nombrecorte + "'";
+    }
+    
+    
     
 }
